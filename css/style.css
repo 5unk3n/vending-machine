@@ -33,6 +33,13 @@ li {
   list-style: none;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 /* Layouts ---------------------------*/
 header {
   max-width: 386px;
@@ -114,14 +121,29 @@ section {
 
 /* machine-menu */
 .menu-item {
-  width: auto;
+  display: block;
+  width: 100%;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 0 4px 0 rgb(0 0 0 / 50%);
   position: relative;
 }
 
+.menu-item:hover {
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 100%);
+  transition: 0.2s;
+}
+
+.menu-item:active {
+  box-shadow: 0 0 0 3px var(--color-violet);
+}
+
+.menu-item:disabled {
+  pointer-events: none;
+}
+
 .item-name {
+  display: inline-block;
   font-size: 9px;
   color: #333333;
   margin: 6px 0 7px 0;
