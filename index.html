@@ -20,54 +20,11 @@
       <div class="container">
         <section class="vending-machine">
           <h2 class="a11y-hidden">자판기</h2>
-          <ul id="machineMenu" class="machine-menu">
-            <!-- <li>
-              <button class="menu-item selected">
-                <img class="item-img" src="img/콜라.svg" alt="" />
-                <span class="item-name">Original_Cola</span>
-                <span class="item-price">1000원</span>
-              </button>
-            </li>
-            <li>
-              <button class="menu-item soldout">
-                <img class="item-img" src="img/콜라-2.svg" alt="" />
-                <span class="item-name">Violet_Cola</span>
-                <span class="item-price">1000원</span>
-              </button>
-            </li>
-            <li>
-              <button class="menu-item">
-                <img class="item-img" src="img/콜라-4.svg" alt="" />
-                <span class="item-name">Yellow_Cola</span>
-                <span class="item-price">1000원</span>
-              </button>
-            </li>
-            <li>
-              <button class="menu-item">
-                <img class="item-img" src="img/콜라-1.svg" alt="" />
-                <span class="item-name">Cool_Cola</span>
-                <span class="item-price">1000원</span>
-              </button>
-            </li>
-            <li>
-              <button class="menu-item selected">
-                <img class="item-img" src="img/콜라-3.svg" alt="" />
-                <span class="item-name">Green_Cola</span>
-                <span class="item-price">1000원</span>
-              </button>
-            </li>
-            <li>
-              <button class="menu-item">
-                <img class="item-img" src="img/콜라-5.svg" alt="" />
-                <span class="item-name">Orange_Cola</span>
-                <span class="item-price">1000원</span>
-              </button>
-            </li> -->
-          </ul>
+          <ul id="machineMenu" class="machine-menu"></ul>
           <div class="machine-control">
             <div class="money">
               <span>잔액 :</span>
-              <span id="balance"> 원</span>
+              <span id="balance">0 원</span>
             </div>
             <button id="changeButton" class="btn">거스름돈 반환</button>
             <input
@@ -79,19 +36,8 @@
               min="0"
             />
             <button id="depositButton" class="btn deposit">입금</button>
-            <ul id="selectMenu" class="menu-list">
-              <!-- <li>
-                <img class="menu-list-img" src="img/콜라.svg" alt="" />
-                <p class="menu-list-name">Original_Cola</p>
-                <button class="menu-list-button">1</button>
-              </li>
-              <li>
-                <img class="menu-list-img" src="img/콜라-3.svg" alt="" />
-                <p class="menu-list-name">Green_Cola</p>
-                <button class="menu-list-button">2</button>
-              </li> -->
-            </ul>
-            <button class="btn buy">획득</button>
+            <ul id="selectMenu" class="menu-list"></ul>
+            <button id="buyButton" class="btn buy">획득</button>
           </div>
         </section>
         <div class="container2">
@@ -99,34 +45,13 @@
             <h2 class="a11y-hidden">소지금</h2>
             <div class="money">
               <span>소지금 :</span>
-              <span id="money">원</span>
+              <span id="money">0 원</span>
             </div>
           </section>
           <section class="purchased">
             <h2>획득한 음료</h2>
-            <ul id="purchasedMenu" class="menu-list">
-              <li>
-                <img class="menu-list-img" src="img/콜라.svg" alt="" />
-                <p class="menu-list-name">Original_Cola</p>
-                <button class="menu-list-button">1</button>
-              </li>
-              <li>
-                <img class="menu-list-img" src="img/콜라-3.svg" alt="" />
-                <p class="menu-list-name">Green_Cola</p>
-                <button class="menu-list-button">2</button>
-              </li>
-              <li>
-                <img class="menu-list-img" src="img/콜라-5.svg" alt="" />
-                <p class="menu-list-name">Orange_Cola</p>
-                <button class="menu-list-button">1</button>
-              </li>
-              <li>
-                <img class="menu-list-img" src="img/콜라-2.svg" alt="" />
-                <p class="menu-list-name">Violet_Cola</p>
-                <button class="menu-list-button">5</button>
-              </li>
-            </ul>
-            <p class="total-price">총금액 : 9,000 원</p>
+            <ul id="purchasedMenu" class="menu-list"></ul>
+            <p id="totalPrice" class="total-price">총금액 : 0 원</p>
           </section>
         </div>
       </div>
